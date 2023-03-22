@@ -143,11 +143,11 @@ foreach(Pelicula movis in repelis)
 {
 movis.Imprime();
 }
-     p1.AgregaActor(new Actor("joaquin phoenix", 1974));
-     p2.AgregaActor(new Actor("Viggo Mortensen", 1958));
+    p1.AgregaActor(new Actor("Ryan Gosling", 1980));
+     p1.AgregaActor(new Actor("Emma Stone", 1988));
 
    p1.ImprimeActores();
-   p2.ImprimeActores();
+
   
 
         }
