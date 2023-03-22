@@ -61,7 +61,16 @@ namespace Pelicula
             Console.WriteLine($"{titulo} ({año})");
 
         }
-        
+           public void AgregaActor(Actor actor)
+        {
+            actores.Add(actor);
+        }
+        public void ImprimeActores()
+        {
+            foreach(Actor persona in actores)
+            {
+                Console.WriteLine($"{persona.GetNombre()} ({persona.GetAño()})");
+            }
     }
 
     public class Actor
@@ -86,6 +95,7 @@ public Actor (string Nactor,Int16 naciaño)
     }
     public Int16 GetAño()
     {return año;}
+    
     public void SetAño(Int16 años)
     {
         año=años;
@@ -94,6 +104,7 @@ public Actor (string Nactor,Int16 naciaño)
         {
             Console.WriteLine($"{Nombre} ({año})");
         }
+
     }
 
     // Puedes probar tu código en Main() pero lo importante
@@ -118,7 +129,21 @@ public Actor (string Nactor,Int16 naciaño)
     p2.SetAño(2018);
     Console.WriteLine("{0}({1})", p2.GetTitulo(), p2.GetAño());
 
+    List<Pelicula> repelis = new List<Pelicula>();
 
+repelis.Add(new Pelicula ("The Joker",2019));
+repelis.Add(new Pelicula ("Green Book",2018));
+
+
+foreach(Pelicula movis in repelis)
+{
+movis.Imprime();
+}
+    p1.AgregaActor(new Actor("Joaquin Phoenix", 1974));
+   p2.AgregaActor(new Actor("Viggo Mortensen", 1958));
+   p1.ImprimeActores();
+   p2.ImprimeActores();
         }
     }
-}
+    }
+    }
