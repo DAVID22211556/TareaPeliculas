@@ -143,7 +143,6 @@ movis.Imprime();
      p1.AgregaActor(new Actor("Emma Stone", 1988));
 
    p1.ImprimeActores();
-
   
 
         }
