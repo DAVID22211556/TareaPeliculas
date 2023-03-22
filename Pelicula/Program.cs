@@ -71,15 +71,19 @@ namespace Pelicula
             {
                 Console.WriteLine($"{persona.GetNombre()} ({persona.GetAño()})");
             }
+            
+    }
     }
 
     public class Actor
     {
         //Propiedades
-        public string Nombre;
-        public Int16 año;
+     string Nombre;
+     Int16 año;
 
         //Constructores
+        public Actor()
+        {}
 public Actor (string Nactor,Int16 naciaño)
 {
     Nombre=Nactor;
@@ -118,18 +122,18 @@ public Actor (string Nactor,Int16 naciaño)
         {
          
 
-    Pelicula p1 = new Pelicula();
-    Pelicula p2 = new Pelicula();
+               Pelicula p1 = new Pelicula();
+               Pelicula p2 = new Pelicula();
 
-    p1.SetTitulo("The Joker");
-    p1.SetAño(2019);
-    Console.WriteLine("{0}({1})", p1.GetTitulo(), p1.GetAño());
-    p1.Imprime();
-    p2.SetTitulo("Green Book");
-    p2.SetAño(2018);
-    Console.WriteLine("{0}({1})", p2.GetTitulo(), p2.GetAño());
+                p1.SetTitulo("The Joker");
+                p1.SetAño(2019);
+                Console.WriteLine("{0}({1})", p1.GetTitulo(), p1.GetAño());
+                p1.Imprime();
+                p2.SetTitulo("Green Book");
+         p2.SetAño(2018);
+        Console.WriteLine("{0}({1})", p2.GetTitulo(), p2.GetAño());
 
-    List<Pelicula> repelis = new List<Pelicula>();
+         List<Pelicula> repelis = new List<Pelicula>();
 
 repelis.Add(new Pelicula ("The Joker",2019));
 repelis.Add(new Pelicula ("Green Book",2018));
@@ -139,11 +143,14 @@ foreach(Pelicula movis in repelis)
 {
 movis.Imprime();
 }
-    p1.AgregaActor(new Actor("Joaquin Phoenix", 1974));
-   p2.AgregaActor(new Actor("Viggo Mortensen", 1958));
+     p1.AgregaActor(new Actor("joaquin phoenix", 1974));
+     p2.AgregaActor(new Actor("Viggo Mortensen", 1958));
+
    p1.ImprimeActores();
    p2.ImprimeActores();
+  
+
         }
-    }
+    
     }
     }
