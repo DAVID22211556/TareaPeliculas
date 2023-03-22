@@ -24,15 +24,43 @@ namespace Pelicula
      }
      
         //Métodos
+     public string GetTitulo()
+     {return titulo;}
      
+     public void SetTitulo(string titulo)
+     {
+        this.titulo=titulo;
+        
+     }
+     public Int16 GetAño()
+     {return año;}
+     public void SetAño(Int16 año)
+    {
+        this.año=año;
+        
+    }
+    public string GetPais()
+    {return pais;}
+    public void SetPais(string pais)
+    {
+    this.pais=pais;
+
+    }
+    public string GetDirector()
+    {return director;}
+    public void SetDirector(string director)
+    {
+        this.director=director;
+
+    }
+
 
      
         public void Imprime()
         {
-     //       Console.WriteLine($"{titulo} ({año})");
+            Console.WriteLine($"{titulo} ({año})");
 
         }
-
 
     }
 
