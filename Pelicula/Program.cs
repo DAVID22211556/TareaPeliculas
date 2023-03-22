@@ -61,17 +61,35 @@ namespace Pelicula
             Console.WriteLine($"{titulo} ({año})");
 
         }
-
+        
     }
 
     public class Actor
     {
         //Propiedades
+        public string Nombre;
+        public Int16 año;
 
         //Constructores
-
+public Actor (string Nactor,Int16 naciaño)
+{
+    Nombre=Nactor;
+    año=naciaño;
+}
 
         //Métodos 
+    public string GetNombre()
+    {return Nombre;}
+    public void SetNombre(string nombres)
+    {
+        Nombre=nombres;
+    }
+    public Int16 GetAño()
+    {return año;}
+    public void SetAño(Int16 años)
+    {
+        año=años;
+    }
         public void Imprime()
         {
             Console.WriteLine($"{Nombre} ({Año})");
