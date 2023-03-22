@@ -125,14 +125,10 @@ public Actor (string Nactor,Int16 naciaño)
                Pelicula p1 = new Pelicula();
                Pelicula p2 = new Pelicula();
 
-                p1.SetTitulo("The Joker");
-                p1.SetAño(2019);
-                Console.WriteLine("{0}({1})", p1.GetTitulo(), p1.GetAño());
-                p1.Imprime();
-                p2.SetTitulo("Green Book");
-         p2.SetAño(2018);
-        Console.WriteLine("{0}({1})", p2.GetTitulo(), p2.GetAño());
-
+               p1.SetTitulo("La La Land");
+            p1.SetAño(2016);
+            Console.WriteLine("{0} ({1})", p1.GetTitulo(), p1.GetAño());
+            p1.Imprime();
          List<Pelicula> repelis = new List<Pelicula>();
 
 repelis.Add(new Pelicula ("The Joker",2019));
